@@ -13,3 +13,5 @@ For this project Orfeo ToolBox will be utilized.
 -Extract the contents to C:\OTB
 
 -Run "C:\OTB\otbenv.bat" from the command line in Windows in order to use the OTB commands in the CMD
+
+-Use the steps in "OTB_Segmentation.txt" to run the segmentation algorithm
