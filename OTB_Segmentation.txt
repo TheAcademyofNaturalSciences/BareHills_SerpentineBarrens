@@ -4,9 +4,23 @@ C:\OTB\otbenv.bat
 cd T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL
 mkdir segout
 cd segout
+
+# The combined algorithm
 otbcli_LargeScaleMeanShift -in ../naip4b_2015_prj.tif -spatialr 5 -ranger 15 -minsize 10 -mode.vector.out segmentation_merged.shp
+
+# Remove everything and try some new parameters
+# These parameters below are good if we were making a land cover dataset, buildings and trees break out well
+# For the purposes here they might be too coarse
+del T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\segout\*
 otbcli_LargeScaleMeanShift -in ../naip4b_2015_prj.tif -spatialr 10 -ranger 70 -minsize 15 -mode.vector.out segmentation_merged.shp
 
+# Try again
+del T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\segout\*
+otbcli_LargeScaleMeanShift -in ../naip4b_2015_prj.tif -spatialr 10 -ranger 40 -minsize 15 -mode.vector.out segmentation_merged.shp
+
+# With the better dataset
+del T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\segout\*
+otbcli_LargeScaleMeanShift -in ../barehills6in_prj.tif -spatialr 10 -ranger 40 -minsize 40 -mode.vector.out segmentation_merged.shp
 
 
 # INDIVIDUAL ALGORITHMS
