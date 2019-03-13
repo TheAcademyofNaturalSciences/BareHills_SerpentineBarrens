@@ -6,6 +6,8 @@ GEOBIA packages in Python 3.6 include RSGISLib, GDAL, Fiona, Shapely and RIOS li
 
 For this project Orfeo ToolBox will be utilized.
 
+#### Large-Scale Mean-Shift (LSMS) segmentation
+
 -Download OTB from here: https://www.orfeo-toolbox.org/download/
 
 -Extract the contents to C:\OTB
