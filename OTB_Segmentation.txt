@@ -1,0 +1,89 @@
+C:\OTB\otbenv.bat
+
+Processing algorithm…
+Algorithm 'MeanShiftSmoothing' starting…
+Input parameters:
+{ 'in' : 'D:/DATA/SPATIAL/Imagery/BareHills/barehills_6in.tif'
+, 'fout' : 'T:/WilliamPenn_Share/EDS/BARE_HILLS/DATA/SPATIAL/Segmentation/mss_sfo_01.tif'
+, 'foutpos' : 'T:/WilliamPenn_Share/EDS/BARE_HILLS/DATA/SPATIAL/Segmentation/mss_sfdo_01.tif'
+, 'spatialr' : 5
+, 'ranger' : 15
+, 'thres' : 0.1
+, 'maxiter' : 100
+, 'rangeramp' : 0
+, 'modesearch' : False
+, 'outputpixeltype' : 5 }
+
+otbcli_MeanShiftSmoothing -in 'D:/DATA/SPATIAL/Imagery/BareHills/barehills_6in.tif' -fout 'T:/WilliamPenn_Share/EDS/BARE_HILLS/DATA/SPATIAL/Segmentation/mss_sfo_01.tif' -foutpos 'T:/WilliamPenn_Share/EDS/BARE_HILLS/DATA/SPATIAL/Segmentation/mss_sfdo_01.tif' -spatialr 5 -ranger 15 -thres 0.1 -maxiter 100 -rangeramp 0 -modesearch False -outputpixeltype 5
+
+
+Processing algorithm…
+Algorithm 'LSMSSegmentation' starting…
+Input parameters:
+{ 'in' : 'T:/WilliamPenn_Share/EDS/BARE_HILLS/DATA/SPATIAL/Segmentation/mss_sfo_01.tif',
+ 'inpos' : None,
+ 'out' : 'T:/WilliamPenn_Share/EDS/BARE_HILLS/DATA/SPATIAL/Segmentation/lsmsseg_oli_01.tif',
+ 'spatialr' : 5,
+ 'ranger' : 15,
+ 'minsize' : 0,
+ 'tilesizex' : 500,
+ 'tilesizey' : 500,
+ 'tmpdir' : '',
+ 'cleanup' : True,
+ 'outputpixeltype' : 5 }
+
+otbcli_LSMSSegmentation -in 'T:/WilliamPenn_Share/EDS/BARE_HILLS/DATA/SPATIAL/Segmentation/mss_sfo_01.tif' -inpos None -out 'T:/WilliamPenn_Share/EDS/BARE_HILLS/DATA/SPATIAL/Segmentation/lsmsseg_oli_01.tif' -spatialr 5 -ranger 15 -minsize 0 -tilesizex 500 -tilesizey 500 -tmpdir  -cleanup True -outputpixeltype 5
+
+
+Processing algorithm…
+Algorithm 'LSMSSmallRegionsMerging' starting…
+Input parameters:
+{ 'in' : 'D:/DATA/SPATIAL/Imagery/BareHills/barehills_6in.tif',
+ 'inseg' : 'T:/WilliamPenn_Share/EDS/BARE_HILLS/DATA/SPATIAL/Segmentation/lsmsseg_oli_01.tif',
+ 'out' : 'T:/WilliamPenn_Share/EDS/BARE_HILLS/DATA/SPATIAL/Segmentation/lsmsssrm_oi_01.tif',
+ 'minsize' : 40,
+ 'tilesizex' : 500,
+ 'tilesizey' : 500,
+ 'outputpixeltype' : 5 }
+
+otbcli_LSMSSmallRegionsMerging in 'D:/DATA/SPATIAL/Imagery/BareHills/barehills_6in.tif' -inseg 'T:/WilliamPenn_Share/EDS/BARE_HILLS/DATA/SPATIAL/Segmentation/lsmsseg_oli_01.tif' -out 'T:/WilliamPenn_Share/EDS/BARE_HILLS/DATA/SPATIAL/Segmentation/lsmsssrm_oi_01.tif' -minsize 40 -tilesizex 500 -tilesizey 500 -outputpixeltype 5
+
+
+
+
+
+
+
+
+
+# ALL TOGETHER
+cd 
+otbcli_LargeScaleMeanShift -in naip4b_2015_prj.tif -spatialr 5 -ranger 15 -minsize 10 -mode.vector.out segmentation_merged.shp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
