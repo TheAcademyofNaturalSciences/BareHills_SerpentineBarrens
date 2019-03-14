@@ -1,18 +1,46 @@
 import numpy as np
-import gdal
+import time
 import otbApplication as otb
+import gdal
+import os
 # from rsgislib.segmentation import segutils
 # from rios import ratapplier
 
 print(np.__version__)
-otb.
+print('Available applications: ')
+print (str( otb.Registry.GetAvailableApplications()))
+
+LargeScaleMeanShift = otb.Registry.CreateApplication('LargeScaleMeanShift')
+print (LargeScaleMeanShift.GetParametersKeys())
+
+# 'in', 'spatialr', 'ranger', 'minsize', 'tilesizex', 'tilesizey', 'mode',
+# 'mode.vector.imfield', 'mode.vector.out', 'mode.raster.out', 'cleanup',
+# 'ram', 'inxml', 'outxml'
+
+inras = r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\barehills6in_prj_s.tif'
+spatialr = str(5)
+ranger = str(15)
+minsize = str(10)
+outshp = r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\segout_02\seg_merged_02.shp'
+
+LargeScaleMeanShift.SetParameterString("in", inras)
+LargeScaleMeanShift.SetParameterString("spatialr", spatialr)
+LargeScaleMeanShift.SetParameterString("ranger", ranger)
+LargeScaleMeanShift.SetParameterString("minsize", minsize)
+LargeScaleMeanShift.SetParameterString("mode.vector.out", outshp)
+
+start_time = time.clock()
+LargeScaleMeanShift.ExecuteAndWriteOutput()
+print("OTB operation took:")
+print(time.clock() - start_time, "seconds")
 
 
 
 
 
 
-
+# OLDER WORK TRYING TO USE RSGISLib, this requires the rasters in kea format
+# and only works well on a Linux OS
 #
 # inputImage = "D:\\DATA\\SPATIAL\\Imagery\\BareHills\\barehills_6in.tif"
 # outputClumps = "D:\\DATA\\SPATIAL\\Imagery\\BareHills\\barehills_6inclumps.kea"
