@@ -8,23 +8,28 @@ For this project Orfeo ToolBox will be utilized.
 
 #### Large-Scale Mean-Shift (LSMS) segmentation
 
--Download OTB from here: https://www.orfeo-toolbox.org/download/
 
--Extract the contents to C:\OTB
-
--Run "C:\OTB\otbenv.bat" from the command line in Windows in order to use the OTB commands in the CMD
 
 -Use the steps in "OTB_Segmentation.txt" to run the segmentation algorithm
 
 ## Installation and Running OTB in Python
 
+##### Download OTB and Run the batch file for the otb environment
+The otbApplication cannot be installed via pip or conda
+
+Download OTB from here: https://www.orfeo-toolbox.org/download/
+
+Extract the contents to C:\OTB (or another folder of your choice)
+
+Run "C:\OTB\otbenv.bat" from the command line in Windows in order to use the OTB commands in the CMD
+
+C:\OTB\otbenv.bat for if this is where you downloaded the application
+
 ##### Add these paths to System variables
+(Alter the paths according to where you placed your OTB installation)
 1. PYTHONPATH > C:\OTB\lib\python3
 2. Path > C:\OTB\bin
 3. OTB_APPLICATION_PATH > C:\OTB\lib\otb\applications
-
-##### Run the batch file for the otb environment
-C:\OTB\otbenv.bat
 
 ##### Create a new Conda environment
 conda create -n OTB python=3.5 anaconda
