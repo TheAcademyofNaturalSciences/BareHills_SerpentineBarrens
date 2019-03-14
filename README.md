@@ -2,6 +2,10 @@
 Geographic Object-Based Image Analysis (GEOBIA) to identify vegetation in serpentine barrens near Lake Roland, MD.
 
 **Raw Image**
+<p align="center">
+  <img width="740" height="440" src="images/Before_50.PNG">
+</p>
+
 ![Raw Image](images/Before_50.PNG)
 
 **Segmented Image**
