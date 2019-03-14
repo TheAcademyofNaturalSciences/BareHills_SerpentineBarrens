@@ -12,9 +12,9 @@ Geographic Object-Based Image Analysis (GEOBIA) to identify vegetation in serpen
 </p>
 
 ## Packages
-GEOBIA packages in Python 3.6 include RSGISLib, GDAL, Fiona, Shapely and RIOS libraries.
+GEOBIA, remote sensing, and general raster analysis libraries in Python 3.5 include but not limited to otbApplication, rasterio, RSGISLib, GDAL, Fiona, Shapely and RIOS.
 
-For this project Orfeo ToolBox will be utilized.
+For this project Orfeo ToolBox (otbApplication) will be utilized.
 
 #### Large-Scale Mean-Shift (LSMS) segmentation
 
