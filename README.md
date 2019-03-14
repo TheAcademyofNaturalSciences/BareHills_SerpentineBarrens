@@ -8,7 +8,7 @@ For this project Orfeo ToolBox (otbApplication) will be utilized.
 
 #### Large-Scale Mean-Shift (LSMS) segmentation
 
--Use the steps in "OTB_Segmentation.txt" to run the segmentation algorithm
+* Use the steps in "OTB_Segmentation.txt" to run the segmentation algorithm
 
 ## Installation and Running OTB in Python
 
