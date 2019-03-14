@@ -21,22 +21,25 @@ Download OTB from here: https://www.orfeo-toolbox.org/download/
 
 Extract the contents to C:\OTB (or another folder of your choice)
 
-Run "C:\OTB\otbenv.bat" from the command line in Windows in order to use the OTB commands in the CMD
-
-C:\OTB\otbenv.bat for if this is where you downloaded the application
+Run the batch file "C:\OTB\otbenv.bat" from the command line in Windows in order to use the OTB commands in the CMD. This should set everything up for you correctly. If you receive any errors about locating DLL's you may have to follow the steps below to manually enter the patah system variables.
+```
+C:\OTB\otbenv.bat
+```
+(if this is where you unzipped the downloaded application)
 
 ##### Add these paths to System variables
 (Alter the paths according to where you placed your OTB installation)
+```
 1. PYTHONPATH > C:\OTB\lib\python3 (if this doesn't work try C:\OTB\lib\python3\otbApplication.py)
 2. Path > C:\OTB\bin
 3. OTB_APPLICATION_PATH > C:\OTB\lib\otb\applications
-
-If using PyCharm, also add these paths to the project interpreter using the method linked below:
+```
+**If using PyCharm**, also add these paths to the project interpreter using the method linked below:
 https://stackoverflow.com/questions/19885821/how-do-i-import-modules-in-pycharm
 
 ##### Create a new Conda environment
+```
 conda create -n OTB python=3.5 anaconda
-
 activate OTB
-
 conda install numpy gdal
+```
