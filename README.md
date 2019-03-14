@@ -27,7 +27,7 @@ C:\OTB\otbenv.bat for if this is where you downloaded the application
 
 ##### Add these paths to System variables
 (Alter the paths according to where you placed your OTB installation)
-1. PYTHONPATH > C:\OTB\lib\python3
+1. PYTHONPATH > C:\OTB\lib\python3 (if this doesn't work try C:\OTB\lib\python3\otbApplication.py)
 2. Path > C:\OTB\bin
 3. OTB_APPLICATION_PATH > C:\OTB\lib\otb\applications
 
