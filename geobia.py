@@ -1,6 +1,17 @@
 import numpy as np
-from rsgislib.segmentation import segutils
-from rios import ratapplier
+import gdal
+import otbApplication as otb
+# from rsgislib.segmentation import segutils
+# from rios import ratapplier
+
+print(np.__version__)
+otb.
+
+
+
+
+
+
 
 #
 # inputImage = "D:\\DATA\\SPATIAL\\Imagery\\BareHills\\barehills_6in.tif"
