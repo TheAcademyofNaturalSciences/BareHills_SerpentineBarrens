@@ -1,24 +1,12 @@
 # BareHills_SerpentineBarrens
 Geographic Object-Based Image Analysis (GEOBIA) to identify vegetation in serpentine barrens near Lake Roland, MD.
 
-**Raw Image**
-<p align="center">
-  <img width="752" height="446" src="images/Before_50.PNG">
-</p>
-
-**Segmented Image**
-<p align="center">
-  <img width="752" height="446" src="images/Segmented_50.PNG">
-</p>
-
 ## Packages
 GEOBIA, remote sensing, and general raster analysis libraries in Python 3.5 include but not limited to otbApplication, rasterio, RSGISLib, GDAL, Fiona, Shapely and RIOS.
 
 For this project Orfeo ToolBox (otbApplication) will be utilized.
 
 #### Large-Scale Mean-Shift (LSMS) segmentation
-
-
 
 -Use the steps in "OTB_Segmentation.txt" to run the segmentation algorithm
 
@@ -53,3 +41,14 @@ conda create -n OTB python=3.5 anaconda
 activate OTB
 conda install numpy gdal
 ```
+## Output
+
+**Raw Image**
+<p align="center">
+  <img width="752" height="446" src="images/Before_50.PNG">
+</p>
+
+**Segmented Image**
+<p align="center">
+  <img width="752" height="446" src="images/Segmented_50.PNG">
+</p>
