@@ -33,5 +33,7 @@ C:\OTB\otbenv.bat for if this is where you downloaded the application
 
 ##### Create a new Conda environment
 conda create -n OTB python=3.5 anaconda
+
 activate OTB
+
 conda install numpy gdal
