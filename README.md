@@ -31,6 +31,9 @@ C:\OTB\otbenv.bat for if this is where you downloaded the application
 2. Path > C:\OTB\bin
 3. OTB_APPLICATION_PATH > C:\OTB\lib\otb\applications
 
+If using PyCharm, also add these paths to the project interpreter using the method linked below:
+https://stackoverflow.com/questions/19885821/how-do-i-import-modules-in-pycharm
+
 ##### Create a new Conda environment
 conda create -n OTB python=3.5 anaconda
 
