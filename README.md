@@ -15,7 +15,7 @@ For this project Orfeo ToolBox will be utilized.
 ## Installation and Running OTB in Python
 
 ##### Download OTB and Run the batch file for the otb environment
-The otbApplication cannot be installed via pip or conda
+The otbApplication python library cannot be installed via pip or conda, and works in either version 2.7 and 3.5
 
 Download OTB from here: https://www.orfeo-toolbox.org/download/
 
