@@ -2,10 +2,10 @@
 Geographic Object-Based Image Analysis (GEOBIA) to identify vegetation in serpentine barrens near Lake Roland, MD.
 
 **Raw Image**
-![Raw Image](/images/Before_50.png)
+![Raw Image](images/Before_50.PNG)
 
 **Segmented Image**
-![Segmented Image](/images/Segmented_50.png)
+![Segmented Image](images/Segmented_50.PNG)
 
 ## Packages
 GEOBIA packages in Python 3.6 include RSGISLib, GDAL, Fiona, Shapely and RIOS libraries.
