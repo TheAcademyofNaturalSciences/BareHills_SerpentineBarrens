@@ -3,13 +3,13 @@ Geographic Object-Based Image Analysis (GEOBIA) to identify vegetation in serpen
 
 **Raw Image**
 <p align="center">
-  <img width="740" height="440" src="images/Before_50.PNG">
+  <img width="752" height="446" src="images/Before_50.PNG">
 </p>
 
-![Raw Image](images/Before_50.PNG)
-
 **Segmented Image**
-![Segmented Image](images/Segmented_50.PNG)
+<p align="center">
+  <img width="752" height="446" src="images/Segmented_50.PNG">
+</p>
 
 ## Packages
 GEOBIA packages in Python 3.6 include RSGISLib, GDAL, Fiona, Shapely and RIOS libraries.
