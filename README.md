@@ -23,7 +23,7 @@ For this project Orfeo ToolBox will be utilized.
 2. Path > C:\OTB\bin
 3. OTB_APPLICATION_PATH > C:\OTB\lib\otb\applications
 
-#### Run the batch file for the otb environment
+##### Run the batch file for the otb environment
 C:\OTB\otbenv.bat
 
 ##### Create a new Conda environment
