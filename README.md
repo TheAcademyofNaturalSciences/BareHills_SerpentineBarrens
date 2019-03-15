@@ -19,7 +19,7 @@ Download OTB from here: https://www.orfeo-toolbox.org/download/
 
 Extract the contents to C:\OTB (or another folder of your choice)
 
-Run the batch file "C:\OTB\otbenv.bat" from the command line in Windows in order to use the OTB commands in the CMD. This should set everything up for you correctly. If you receive any errors about locating DLL's you may have to follow the steps below to manually enter the patah system variables.
+Run the batch file "C:\OTB\otbenv.bat" from the command line in Windows in order to use the OTB commands in the CMD. This should set everything up for you correctly. If you receive any errors about locating DLL's when trying to import otbApplication in Python, you may have to follow the steps below to manually enter the path system variables.
 ```
 C:\OTB\otbenv.bat
 ```
