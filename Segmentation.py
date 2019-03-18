@@ -10,14 +10,14 @@ import os
 from path import Path
 
 
-runNum = '05'
+runNum = '08'
 os.getcwd()
 # Go to the directory you want to output the segmentation files
 os.mkdir(r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\segout_'+runNum)
 os.chdir(r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\segout_'+runNum)
 
 print('Available applications: ')
-apps = list( otb.Registry.GetAvailableApplications())
+apps = list(otb.Registry.GetAvailableApplications())
 for app in apps:
     print(app)
 
@@ -33,12 +33,12 @@ for param in params:
 # ram is in MB
 
 inras = r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\barehills6in_prj_s.tif'
-spatialr = 4   # Changing this parameter will effect run-time, higher means more avg.ing -> more time
-ranger = 15.00
-minsize = 12
+spatialr = 10   # Changing this parameter will effect run-time, higher means more avg.ing -> more time
+ranger = 30
+minsize = 40
 cleanup = 'True'
 ram = 2000
-outshp = r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\segout_'+runNum+'\seg_merged_'+runNum+'.shp'
+outshp = r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\segout_'+runNum+r'\seg_merged_'+runNum+r'.shp'
 
 # Set the parameters for the application
 LargeScaleMeanShift.SetParameterString("in", inras)
@@ -72,7 +72,7 @@ myFile.close()
 
 # Cleanup the extra raster files created by the application
 d = Path(os.getcwd())
-clean = d.walkfiles('*.tif')
+clean = d.walkfiles('*FINAL.tif')
 for file in clean:
     file.remove()
 
