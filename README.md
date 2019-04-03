@@ -54,6 +54,18 @@ conda install numpy gdal
 </p>
 
 **Process**
+Segment the image in the area of interest using spatial and radiometric properties. Create 300 random points across the image, and classify them based on the criteria below. Spatially join the point classes to the vector segments, and train the vector classifier to identify radiometric properties to these classes. Run the vector classifier to classify the image.
+
+1 - Water
+2 - Deciduous
+3 - Coniferous
+4 - Shrub Scrub
+5 - Grass
+6 - Barren
+7 - Impervious Building
+8 - Impervious Pavement
+10 - Shadow
+
 <p align="center">
   <img width="355" height="295" src="images/AOI.PNG">
   <img width="355" height="295" src="images/AOI_Segmented.PNG">
