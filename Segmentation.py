@@ -10,7 +10,7 @@ import os
 from path import Path
 
 
-runNum = '08'
+runNum = '12'
 os.getcwd()
 # Go to the directory you want to output the segmentation files
 os.mkdir(r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\segout_'+runNum)
@@ -32,9 +32,9 @@ for param in params:
 # ranger is in radiometric units
 # ram is in MB
 
-inras = r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\barehills6in_prj_s.tif'
-spatialr = 10   # Changing this parameter will effect run-time, higher means more avg.ing -> more time
-ranger = 30
+inras = r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\barehills6in_prj_s2.tif'
+spatialr = 4   # Changing this parameter will effect run-time, higher means more avg.ing -> more time
+ranger = 10
 minsize = 40
 cleanup = 'True'
 ram = 2000

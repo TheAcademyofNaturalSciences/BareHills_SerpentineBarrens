@@ -34,7 +34,7 @@ options = list(RadiometricIndices.list.GetParameterKeys())
 # ranger is in radiometric units
 # ram is in MB
 
-inras = r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\barehills6in_prj_s.tif'
+inras = r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\barehills6in_prj_s2.tif'
 outras = r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\fexout_'+runNum+r'\fex_merged_'+runNum+'.shp'
 ram = 2000
 # channels = {'red': 1,'blue': 3,'green': 2,'nir': 4}

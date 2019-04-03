@@ -5,7 +5,7 @@
 import numpy as np
 import gdal
 
-inras = r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\barehills6in_prj_s.tif'
+inras = r'T:\WilliamPenn_Share\EDS\BARE_HILLS\DATA\SPATIAL\barehills6in_prj_s2.tif'
 
 driver = gdal.GetDriverByName('GTiff')
 file = gdal.Open(inras)
@@ -28,7 +28,7 @@ band1a[np.where((100 < band1a) & (band1a < 200)) ] = 0
 band1a[np.where((200 < band1a) & (band1a < 256)) ] = band1a/2
 
 # create new file
-file2 = driver.Create( 'barehills6in_prj_sr.tif', file.RasterXSize , file.RasterYSize , 1)
+file2 = driver.Create( 'barehills6in_prj_s2_r.tif', file.RasterXSize , file.RasterYSize , 1)
 file2.GetRasterBand(1).WriteArray(band1a)
 file2.GetRasterBand(2).WriteArray(band2a)
 file2.GetRasterBand(3).WriteArray(band3a)
