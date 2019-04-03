@@ -54,16 +54,12 @@ conda install numpy gdal
 </p>
 
 **Process**
-<p align="left">
+<p align="center">
   <img width="355" height="295" src="images/AOI.PNG">
-</p>
-<p align="right">
   <img width="355" height="295" src="images/AOI_Segmented.PNG">
 </p>
 
-<p align="left">
+<p align="center">
   <img width="355" height="295" src="images/AOI_RandomPts.PNG">
-</p>
-<p align="right">
   <img width="355" height="295" src="images/AOI_Classified2.PNG">
 </p>
