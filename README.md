@@ -67,11 +67,11 @@ Segment the image in the area of interest using spatial and radiometric properti
 10 - Shadow
 
 <p align="center">
-  <img width="355" height="295" src="images/AOI.PNG">
-  <img width="355" height="295" src="images/AOI_Segmented.PNG">
+  <img width="375" height="315" src="images/AOI.PNG">
+  <img width="375" height="315" src="images/AOI_Segmented.PNG">
 </p>
 
 <p align="center">
-  <img width="355" height="295" src="images/AOI_RandomPts.PNG">
-  <img width="355" height="295" src="images/AOI_Classified2.PNG">
+  <img width="375" height="315" src="images/AOI_RandomPts.PNG">
+  <img width="375" height="315" src="images/AOI_Classified2.PNG">
 </p>
