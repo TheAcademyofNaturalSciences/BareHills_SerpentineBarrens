@@ -65,28 +65,28 @@ The vector classifier used in this analysis is the R Random Forest library (rand
 
 Below are the all of the classifications considered.
 
-Markup : 1 - Water
-  2 - Deciduous
-  3 - Coniferous
-  4 - Shrub Scrub
-  5 - Grass
-  6 - Barren
-  7 - Impervious Building
-  8 - Impervious Pavement
-  10 - Shadow
-  11 - Other Vegetation
-  12 - Serpentine Vegetation
-  13 - Serpentine Outcrop
+ 1. Water
+ 2. Deciduous
+ 3. Coniferous
+ 4. Shrub Scrub
+ 5. Grass
+ 6. Barren
+ 7. Impervious Building
+ 8. Impervious Pavement
+ 10. Shadow
+ 11. Other Vegetation
+ 12. Serpentine Vegetation
+ 13. Serpentine Outcrop
 
 Below are the raster bands used in the classification (mean and variance of each, 14 total parameters).
 
-1 - Red
-2 - Blue
-3 - Green
-4 - Near Infrared (NIR)
-6 - Normalized Difference Vegetation Index (NDVI)
-7 - LiDAR Intensity
-8 - LiDAR derived normalized digital surface model (nDSM, canopy height)
+1. Red
+2. Blue
+3. Green
+4. Near Infrared (NIR)
+6. Normalized Difference Vegetation Index (NDVI)
+7. LiDAR Intensity
+8. LiDAR derived normalized digital surface model (nDSM, canopy height)
 
 <p align="center">
   <img width="375" height="315" src="images/AOI.PNG">
