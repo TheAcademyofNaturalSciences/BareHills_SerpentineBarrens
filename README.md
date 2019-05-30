@@ -65,18 +65,18 @@ The vector classifier used in this analysis is the R Random Forest library (rand
 
 Below are the all of the classifications considered.
 
-1 - Water
-2 - Deciduous
-3 - Coniferous
-4 - Shrub Scrub
-5 - Grass
-6 - Barren
-7 - Impervious Building
-8 - Impervious Pavement
-10 - Shadow
-11 - Other Vegetation
-12 - Serpentine Vegetation
-13 - Serpentine Outcrop
+Markup : 1 - Water
+  2 - Deciduous
+  3 - Coniferous
+  4 - Shrub Scrub
+  5 - Grass
+  6 - Barren
+  7 - Impervious Building
+  8 - Impervious Pavement
+  10 - Shadow
+  11 - Other Vegetation
+  12 - Serpentine Vegetation
+  13 - Serpentine Outcrop
 
 Below are the raster bands used in the classification (mean and variance of each, 14 total parameters).
 
