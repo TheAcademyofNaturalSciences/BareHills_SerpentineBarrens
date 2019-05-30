@@ -77,7 +77,7 @@ Segment the image in the area of interest using spatial and radiometric properti
 </p>
 
 <p align="center">
-  <img width="750" height="630" src="images/Maps/7_Classificarion_Method1.PNG">
+  <img width="750" height="630" src="images/Maps/7_Classificarion_Method1.png">
 </p>
   
 
