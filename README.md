@@ -58,8 +58,12 @@ conda install numpy gdal
   <img width="752" height="491" src="images/Process/3_classified.PNG">
 </p>
 
-**Process**
-Segment the image in the area of interest using spatial and radiometric properties. Create 300 random points across the image, and classify them based on the criteria below. Spatially join the point classes to the vector segments, and train the vector classifier to identify radiometric properties to these classes. Run the vector classifier to classify the image.
+**Processing Methods**
+Segment the image in the area of interest using spatial and radiometric properties using OTB segmentation in Python. Create 500 random points across the image, and classify them based on the criteria below. Spatially join the point classes to the vector segments, and train the vector classifier in R to identify radiometric properties to these classes. Run the vector classifier to classify the image.
+
+The vector classifier used in this analysis is the R Random Forest library (randomForest_4.6-14). The training dataset was subdivided into 80% of the dataset used to train the model and 20% for validation of model performance. The highest performing classification model acheived 84% accuracy, and only classified: Water, Trees, Grass/Shrub, Barren, Impervious or Shadow. After classification,road, building, stream and serpentine outcrop polygons obtained via ground truthing were burned into the final classification vector data.
+
+Below are the all of the classifications considered.
 
 1 - Water
 2 - Deciduous
@@ -70,6 +74,19 @@ Segment the image in the area of interest using spatial and radiometric properti
 7 - Impervious Building
 8 - Impervious Pavement
 10 - Shadow
+11 - Other Vegetation
+12 - Serpentine Vegetation
+13 - Serpentine Outcrop
+
+Below are the raster bands used in the classification (mean and variance of each, 14 total parameters).
+
+1 - Red
+2 - Blue
+3 - Green
+4 - Near Infrared (NIR)
+6 - Normalized Difference Vegetation Index (NDVI)
+7 - LiDAR Intensity
+8 - LiDAR derived normalized digital surface model (nDSM, canopy height)
 
 <p align="center">
   <img width="375" height="315" src="images/AOI.PNG">
