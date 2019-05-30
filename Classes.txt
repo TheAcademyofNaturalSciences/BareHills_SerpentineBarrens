@@ -1,0 +1,67 @@
+# METHOD 1
+1 - Water
+2 - Deciduous
+3 - Coniferous
+4 - Shrub Scrub
+5 - Grass # BECAME 4
+6 - Barren
+7 - Impervious Building
+8 - Impervious Pavement
+10 - Shadow
+
+11 - Other Vegetation # BECAME 4
+12 - Serpentine Vegetation # BECAME 6
+13 - Serpentine Outcrop # BECAME 6
+
+(1, 2, 3, 4, 6, 7, 10)
+
+# METHOD 2
+1 - Water
+2 - Deciduous
+3 - Coniferous
+4 - Shrub Scrub
+5 - Grass # BECAME 4
+6 - Barren
+7 - Impervious Building
+8 - Impervious Pavement
+10 - Shadow
+
+11 - Other Vegetation # BECAME 4
+12 - Serpentine Vegetation # BECAME 13
+13 - Serpentine Outcrop
+
+(1, 2, 3, 4, 6, 7, 8, 11, 13)
+
+# METHOD 3
+1 - Water
+2 - Deciduous
+3 - Coniferous # BECAME 2
+4 - Shrub Scrub
+5 - Grass # BECAME 4
+6 - Barren
+7 - Impervious Building
+8 - Impervious Pavement # Became 7
+10 - Shadow
+
+11 - Other Vegetation # BECAME 4
+12 - Serpentine Vegetation # BECAME 6
+13 - Serpentine Outcrop # BECAME 6
+
+(1, 2, 4, 6, 7, 10)
+
+# METHOD 3
+1 - Water
+2 - Deciduous
+3 - Coniferous # BECAME 2
+4 - Shrub Scrub
+5 - Grass # BECAME 4
+6 - Barren
+7 - Impervious Building
+8 - Impervious Pavement # Became 7
+10 - Shadow
+
+11 - Other Vegetation # BECAME 4
+12 - Serpentine Vegetation # BECAME 13
+13 - Serpentine Outcrop
+
+(1, 2, 4, 6, 7, 10, 13)

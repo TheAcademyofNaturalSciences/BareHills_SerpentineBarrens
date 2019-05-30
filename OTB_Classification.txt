@@ -1,3 +1,4 @@
+
 otbcli_TrainVectorClassifier -io.vd seg_merged_09_class_01_training.shp 
 	-io.out seg_merged_09_class_01_svmModel.svm 
 	-feat meanB0 meanB1 meanB2 meanB3 varB0 varB1 varB2 varB3 
@@ -8,3 +9,21 @@ otbcli_VectorClassifier -in seg_merged_09_class_01_testing.shp
 	-out seg_merged_09_class_01_classifies.shp 
 	-feat meanB0 meanB1 meanB2 meanB3 varB0 varB1 varB2 varB3 
 	-cfield class
+
+
+
+
+otbcli_TrainVectorClassifier -io.vd seg_merged_13_class_training.shp
+	-io.out seg_merged_13_class_svmModel.svm 
+	-feat meanB0 meanB1 meanB2 meanB3 meanB5 meanB6 meanB7 varB0 varB1 varB2 varB3 varB5 varB6 varB7
+	-cfield class
+
+otbcli_VectorClassifier -in seg_merged_13_class_testing.shp
+	-model seg_merged_13_class_svmModel.svm
+	-out seg_merged_13_class_classified.shp
+	-feat meanB0 meanB1 meanB2 meanB3 meanB5 meanB6 meanB7 varB0 varB1 varB2 varB3 varB5 varB6 varB7
+	-cfield class
+
+otbcli_TrainVectorClassifier -io.vd seg_merged_13_class_training.shp -io.out seg_merged_13_class_svmModel.svm -feat meanB0 meanB1 meanB2 meanB3 meanB5 meanB6 meanB7 varB0 varB1 varB2 varB3 varB5 varB6 varB7 -cfield class
+
+otbcli_VectorClassifier -in seg_merged_13_class_testing.shp -model seg_merged_13_class_svmModel.svm -out seg_merged_13_class_classified.shp -feat meanB0 meanB1 meanB2 meanB3 meanB5 meanB6 meanB7 varB0 varB1 varB2 varB3 varB5 varB6 varB7 -cfield class1
