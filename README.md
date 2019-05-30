@@ -45,12 +45,17 @@ conda install numpy gdal
 
 **Raw Image**
 <p align="center">
-  <img width="752" height="446" src="images/Before_50.PNG">
+  <img width="752" height="491" src="images/Process/1_rgb.PNG">
 </p>
 
 **Segmented Image**
 <p align="center">
-  <img width="752" height="446" src="images/Segmented_50.PNG">
+  <img width="752" height="491" src="images/Process/2_segmented.PNG">
+</p>
+
+**Classified Image**
+<p align="center">
+  <img width="752" height="491" src="images/Process/3_classified.PNG">
 </p>
 
 **Process**
@@ -76,7 +81,7 @@ Segment the image in the area of interest using spatial and radiometric properti
   <img width="375" height="315" src="images/AOI_Classified2.PNG">
 </p>
 
-**Classified Image**
+**Final Map**
 <p align="center">
   <img width="800" height="618" src="images/Maps/7_Classificarion_Method1.png">
 </p>
