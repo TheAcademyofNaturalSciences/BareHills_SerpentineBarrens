@@ -87,7 +87,8 @@ Below are the raster bands used in the classification (mean and variance of each
 6. Normalized Difference Vegetation Index (NDVI)
 7. LiDAR Intensity
 8. LiDAR derived normalized digital surface model (nDSM, canopy height)
-\n
+
+***Visualized Process***
 <p align="center">
   <img width="375" height="315" src="images/AOI.PNG">
   <img width="375" height="315" src="images/AOI_Segmented.PNG">
