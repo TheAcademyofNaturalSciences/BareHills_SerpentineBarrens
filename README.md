@@ -75,3 +75,11 @@ Segment the image in the area of interest using spatial and radiometric properti
   <img width="375" height="315" src="images/AOI_RandomPts.PNG">
   <img width="375" height="315" src="images/AOI_Classified2.PNG">
 </p>
+
+**Classified Image**
+<p align="center">
+  <img width="800" height="618" src="images/Maps/7_Classificarion_Method1.png">
+</p>
+  
+
+
