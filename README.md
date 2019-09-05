@@ -1,7 +1,7 @@
 # BareHills_SerpentineBarrens
 Geographic Object-Based Image Analysis (GEOBIA) to identify vegetation in serpentine barrens near Lake Roland, MD.
 
-For this project Orfeo ToolBox (otbApplication) was utilized to radiometrically segment the image. The segment and their spectral properties were then pulled into R, where a random forest classifier placed each segment into a predicted land cover category.
+For this project Orfeo ToolBox (otbApplication) was utilized to radiometrically segment the image. The segments and their spectral properties were then pulled into R, where a random forest classifier placed each segment into a predicted land cover category.
 
 ## Packages
 GEOBIA, remote sensing, and general raster analysis libraries in Python 3.5 include but not limited to otbApplication, rasterio, RSGISLib, GDAL, Fiona, Shapely and RIOS.
